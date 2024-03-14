@@ -15,9 +15,10 @@ public class MerchantDao {
 	
 
 	public Merchant saveMerchant(Merchant merchant) {
-		
 		return merchantrepository.save(merchant);
 	}
+	
+	
 	public Optional<Merchant> findById(int id) {
 		return merchantrepository.findById(id);
 	}
@@ -30,6 +31,25 @@ public class MerchantDao {
 		}
 		return false;
 	}
+	public Optional<Merchant> verify(String email, String password) {
+		return merchantrepository.verify(email,password);
+	}
+
+	
+	
+	public Optional<Merchant> verifybyphone(long phone, String password) {
+		return merchantrepository.verifybyphone(phone, password);
+	}
+	
+	
+		
+	
+	public Optional<Merchant> findbyToken(String token) {
+		
+		return merchantrepository.findByToken(token);
+	}
+	
+	
 	
 
 	

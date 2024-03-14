@@ -1,0 +1,19 @@
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: bisque;
+    height: 80px;
+    padding: 0px 50px;
+}
+nav h1{
+    color: brown;
+}
+nav span{
+    color: rgb(24, 228, 228);
+}
+nav a{
+    color: black;
+    text-decoration: none;
+}
